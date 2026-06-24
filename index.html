@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 
-  <img src="Photos/DSC_6789.jpg" alt="Trial" class="profile-pic">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reynalyn Malabo Cabaya | Portfolio</title>
@@ -19,31 +18,35 @@
       color: #222;
       line-height: 1.6;
     }
+header {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+  padding: 70px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: left;
+}
+
 .profile-pic {
   width: 180px;
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid white;
+  flex-shrink: 0;
+}
+
+header h1 {
+  font-size: 42px;
   margin-bottom: 10px;
 }
-    header {
-      background: linear-gradient(135deg, #4f46e5, #9333ea);
-      color: white;
-      padding: 70px 20px;
-      text-align: center;
-    }
 
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: auto;
-    }
+header p {
+  font-size: 18px;
+  max-width: 700px;
+}
 
     nav {
       background: white;
@@ -130,9 +133,13 @@
 <body>
 
   <header>
+    <img src="Photos/DSC_6789.jpg" alt="Reynalyn Cabaya" class="profile-pic">
+
+  <div>
     <h1>Reynalyn Malabo Cabaya</h1>
     <p>Web Developer | Front-End Developer | Creative Digital Portfolio</p>
-  </header>
+  </div>
+</header>
 
   <nav>
     <a href="#about">About</a>
